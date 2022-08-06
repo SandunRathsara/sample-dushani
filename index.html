@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="w-screen h-screen flex justify-center items-center bg-gray-900">
+    <div class="bg-gray-700 rounded-xl pt-2">
+      <span class="text-gray-400 px-2">Suggested for you</span>
+      <div class="flex gap-2 mt-2 pt-2 px-2 border-t-2 border-gray-600">
+        <img class="w-12" src="https://avatars.dicebear.com/api/micah/SandunRathsara.svg" alt="avatar" />
+        <div class="flex flex-col">
+          <span class="text-gray-300 font-semibold"
+            >The Ultimate Toy Collector presents Cool Dad Pop Culture Reviews</span
+          >
+          <span class="text-gray-300 text-sm">August 2 at 4:46 PM</span>
+        </div>
+      </div>
+      <div class="pt-2">
+        <img width="700" src="./post.jpeg" alt="post" />
+      </div>
+      <div class="flex justify-between items-center px-2 pt-2">
+        <div class="relative flex">
+          <div class="z-10">
+            <i class="fa-solid fa-thumbs-up p-1 bg-blue-500 rounded-full text-white"></i>
+          </div>
+          <div class="relative -left-2">
+            <i class="fa-solid fa-face-grin-tears rounded-full text-2xl text-yellow-400"></i>
+          </div>
+          <div>
+            <span class="text-gray-300">124K</span>
+          </div>
+        </div>
+        <div class="flex gap-2 text-gray-300">
+          <div>
+            <span>7.6K Comments</span>
+          </div>
+          <div>
+            <span>14K Shares</span>
+          </div>
+        </div>
+      </div>
+      <div class="border-t-2 border-gray-600 flex pt-1 items-center">
+        <button class="flex-1 text-gray-200 m-1 p-1 hover:bg-gray-500 rounded-md">like</button>
+        <button
+          class="flex-1 text-gray-200 m-1 p-1 hover:bg-gray-500 rounded-md"
+          onclick="comment('This is a comment')"
+        >
+          comment
+        </button>
+        <button class="flex-1 text-gray-200 m-1 p-1 hover:bg-gray-500 rounded-md">share</button>
+      </div>
+    </div>
+  </body>
+</html>
